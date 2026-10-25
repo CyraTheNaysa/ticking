@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://5anvbjequqxf"]
+
+[ext_resource type="Script" uid="uid://ca8bj375hvgfh" path="res://time_pickup.gd" id="1_vvnw8"]
+[ext_resource type="Texture2D" uid="uid://cmsxs6piwlsdb" path="res://time.png" id="2_xvhxq"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ss1bm"]
+radius = 32.06244
+
+[node name="TimePickup" type="Area2D" unique_id=1826514861]
+script = ExtResource("1_vvnw8")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=986447788]
+scale = Vector2(2, 2)
+texture = ExtResource("2_xvhxq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1609330304]
+position = Vector2(-1, 6)
+shape = SubResource("CircleShape2D_ss1bm")

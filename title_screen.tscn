@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://bubcy8qrie3c4"]
+
+[ext_resource type="Texture2D" uid="uid://dyg3p813elck3" path="res://winnnn.jpg" id="1_ak2if"]
+[ext_resource type="Script" uid="uid://fgqktogchjba" path="res://title_screen.gd" id="1_ig5kc"]
+[ext_resource type="Texture2D" uid="uid://jh416v0mhsxl" path="res://title.png" id="2_ig5kc"]
+
+[node name="TitleScreen" type="Control" unique_id=771407402]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ig5kc")
+
+[node name="Winnnn" type="Sprite2D" parent="." unique_id=1271635594]
+modulate = Color(0.74509805, 0.2901961, 1, 0.6039216)
+position = Vector2(632.50006, 360.99997)
+scale = Vector2(8.006251, 5.2624993)
+texture = ExtResource("1_ak2if")
+
+[node name="Label" type="Label" parent="." unique_id=6086969]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 7.0
+offset_right = 1291.0
+offset_bottom = 721.0
+theme_override_font_sizes/font_size = 55
+text = "
+Click Anywhere to play"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Title" type="Sprite2D" parent="." unique_id=1459412726]
+position = Vector2(610, 213)
+scale = Vector2(2.06875, 2.06875)
+texture = ExtResource("2_ig5kc")
